@@ -24,7 +24,7 @@ header{
     align-items: center;
     transition: 0.6s;
     padding: 40px 50px;
-    z-index: 100;
+    z-index: 10000;
 }
 header  .logo{
     position: relative;
@@ -52,10 +52,6 @@ header ul li a{
     font-weight: 500px;
     transition: 0.6s;
     text-transform: uppercase;
-}
-@media only screen and (min-width: 600px) {
-
-
 }
 
 header  .menu  li:last-child{
@@ -128,6 +124,7 @@ header  .menu  li.btn a:hover {
 
 .home .person{
     float: right;
+    
     margin: 70px 180px;
     position: relative;
     border-radius: 70px 0 70px 0;
@@ -139,16 +136,13 @@ header  .menu  li.btn a:hover {
     margin-top: 220px;
     position: absolute;
 }
-@media only screen and (min-width: 600px) {
-    .home-text p{
-        max-width: 500px;
-        font-size: 106px;
-        margin-top: 230px;
-    }
-    
+.home-text h6{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 16px;
+
 
 }
-
 
 .home-text h1{
     text-transform: uppercase;
@@ -242,10 +236,7 @@ section{
     text-align: center;
 }
 
-
 .Landing{
     display:flex;
 flex-direction:column;
 }
-
-
