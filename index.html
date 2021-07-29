@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Portfolio || Website</title>
+</head>
+
+<body>
+
+
+
+
+
+
+    <header>
+    
+        <a href="#" class="logo"><img src="logo.png" alt="" style="margin-top:-35px"></a>
+
+
+        <ul class="menu">
+
+
+            <li><a href="#home" class="nav-link active-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About Me</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#intrests" class="nav-link">Intrests</a></li>
+            <li><a href="#photos" class="nav-link">Photos</a></li>
+
+            <li class="btn"><a href="#">Get in touch</a></li>
+
+
+
+        </ul>
+
+
+    </header>
+    <!--<section class="banner"></section> -->
+
+
+
+<div class="Landing">
+    <main class="1-main">
+        <section class="home" id="home">
+
+
+            <div class="container">
+                <div class="person">
+                    <span class="person-overlay"></span>
+                    <img src="Capture4.PNG" alt="" width="580px">
+                </div>
+                <div class="home-text">
+                    <h6 class="student">Student</h6>
+                    <h1 class="name">Jubal</h1>
+                    <p class="small-intro">Hello guyz, my name is Jubal Jacob - I'm a student in Computer Science
+                        Engineering at Karunya University.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+
+
+    <section class="about" id="about">
+        <div class="title">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+        </div>
+
+    </section>
+
+   
+</div>
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- /**letter js*/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+    <!-- /**anime js*/ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $(".name, .student,  .small-intro").lettering();
+
+
+
+            anime({
+                targets: '.home  .person-overlay',
+                translateX: 1200,
+                delay: 1000,
+                duration: 1200,
+                easing: 'easeInSine'
+
+            })
+            anime({
+                targets: '.home  .person img',
+                opacity: 1,
+                delay: 1500,
+                duration: 1200,
+                easing: 'easeInSine'
+            })
+
+            anime({
+                targets: '.student span',
+                opacity: 1,
+                duration: 1200,
+                easing: 'easeInSine',
+                delay: anime.stagger(100, {
+                    start: 3000
+                })
+
+            })
+
+            /***name fade in***/
+
+            anime({
+                targets: '.name span',
+                opacity: 1,
+                duration: 3000,
+                easing: 'easeInSine',
+                delay: anime.stagger(100, {
+                    start: 4500
+                })
+
+            })
+
+            // Second animation
+
+            anime({
+                targets: '.name .char2,  .name  .char4',
+                keyframes: [{
+                    translateY: 100,
+                    duration: 1500
+                }],
+                easing: 'easeInOutExpo',
+                delay: 8000,
+            })
+
+            anime({
+                targets: '.name .char3',
+                keyframes: [{
+                    translateY: -100,
+                    duration: 1500
+                }],
+                easing: 'easeInOutExpo',
+                delay: 8000,
+            })
+
+            //logo
+
+            anime({
+                targets: '.logo',
+                opacity: 1,
+                duration: 3000,
+                delay: 9500,
+            })
+
+            //menu
+
+            anime({
+                targets: '.menu li',
+                opacity: 1,
+                duration: 3000,
+                delay: anime.stagger(150, {
+                    start: 10500
+                })
+            })
+
+            //intro
+
+            anime({
+                targets: '.small-intro span',
+                opacity: 1,
+                duration: 1000,
+                easing: 'easeInSine',
+                delay: anime.stagger(50, {
+                    start: 11000
+                })
+
+
+            })
+
+        });
+    </script>
+
+    <!-- <div>
+        <ul class="sci">
+            <li><a href="#"><img src="instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="linkedin.png" alt=""></a></li>
+
+
+
+
+        </ul>
+    </div> -->
+</body>
+
+</html>
